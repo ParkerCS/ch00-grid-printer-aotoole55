@@ -121,3 +121,46 @@ Another example: print_grid2(5,3):
 |       |       |       |       |       |
 + - - - + - - - + - - - + - - - + - - - +
 '''
+
+print("Part 1:")
+def grid():
+    for i in range(2):
+        print("+" + (4*" -" + " +")*2, end= " ")
+        print()
+        for lines in range(4):
+            print("|" + (" " * 8) + " |" + (" " * 8) + " |", end=" ")
+            print()
+    print("+" + (4 * " -" + " +") * 2, end=" ")
+
+grid()
+
+print()
+print("Part 2:")
+
+def grid(dimension):
+    for i in range(2):
+        print("+" + (int(dimension/2)*" -" + " +")*2, end= " ")
+        print()
+        for lines in range(int(dimension/2)):
+            print("|" + ("  " * int(dimension/2)) + " |" + ("  " * int(dimension/2)) + " |", end=" ")
+            print()
+    print("+" + (int(dimension/2) * " -" + " +") * 2, end=" ")
+
+grid(4)
+print()
+grid(37)
+
+print("\n Part 3:")
+
+def grid(x,y):
+    for i in range(int(x)):
+        print("+" + (int(y)*" -" + " +")*x, end= " ")
+        print()
+        for lines in range(int(y)):
+            print("|" + (("  " * int(y)) + " |")*x, end=" ")
+            print()
+    print("+" + (int(y) * " -" + " +") * x, end=" ")
+
+grid(3,4)
+print()
+grid(10,15)
