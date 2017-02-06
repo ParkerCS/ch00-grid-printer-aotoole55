@@ -1,3 +1,5 @@
+#NICE
+
 '''
 Grid Printer Exercise
 Printing a Grid (adapted from Downey, “Think Python”, ex. 3.5)
@@ -163,4 +165,4 @@ def grid(x,y):
 
 grid(3,4)
 print()
-grid(10,15)
+grid(4,4)
